@@ -28,7 +28,6 @@ def success_table():
             return render_template("index.html", text=str(e))
 
 @app.route("/download-file/")
-
 def download():
     return send_file(filename, attachment_filename='yourfile.csv', as_attachment=True)
 
